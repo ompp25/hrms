@@ -65,17 +65,17 @@
 			<subSections>
 				<ObjectPageSubSection id="goalsSS1" title="">
 					<blocks>
-					<mvc:XMLView viewName="com.create.empEmp_creation.view.PersonalDetails" />
+					<mvc:XMLView viewName="com.create.empEmp_creation.view.ESS.PersonalDetails" />
 					</blocks>
 				</ObjectPageSubSection>
 			</subSections>
 			</ObjectPageSection>
 			
-			<ObjectPageSection id="contact" title="Contact Details">
+			<ObjectPageSection id="Cont" title="Contact Details">
 			<subSections>
-				<ObjectPageSubSection id="contactId" title="">
+				<ObjectPageSubSection id="gol" title="">
 					<blocks>
-					         <mvc:XMLView viewName="com.create.empEmp_creation.view.PersonalDetails" />
+					<mvc:XMLView viewName="com.create.empEmp_creation.view.ESS.ContactDetails" />
 					</blocks>
 				</ObjectPageSubSection>
 			</subSections>
@@ -85,7 +85,7 @@
 				<subSections>
 					<ObjectPageSubSection id="personalSS1" title="">
 						<blocks>
-								<mvc:XMLView viewName="com.create.empEmp_creation.view.Immigration" />
+						<mvc:XMLView viewName="com.create.empEmp_creation.view.ESS.Immigration" />
 						</blocks>
 					</ObjectPageSubSection>
                 </subSections>
@@ -95,7 +95,7 @@
 				<subSections>
 					<ObjectPageSubSection id="employmentSS1" title="">
 						<blocks>
-						<m:Text text="omprakashthak"/>
+					<mvc:XMLView viewName="com.create.empEmp_creation.view.ESS.Report_to" />
 						</blocks>
 					</ObjectPageSubSection>
  

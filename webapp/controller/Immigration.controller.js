@@ -7,25 +7,27 @@ sap.ui.define([
 	return Controller.extend("com.create.empEmp_creation.controller.Immigration", {
 
 		formatDate: function(sValue) {
-
 			var value = sValue.substring(6, 18); // maybe it's safer to work with regular expressions
-
-			var oDateFormat = DateFormat.getDateInstance({
+			var oDateFormat =DateFormat.getDateInstance({
 				pattern: "yyyy-MM-dd"
 			});
 
+			//console.log(oDateFormat.format(new Date(Number(value)))); // 2013/08/11
 			var date = oDateFormat.format(new Date(Number(value)));
 			return date;
 		},
+		
+		
 		onSave: function(oEvent) {
 
 		},
 
+	
 		onEdit: function(oEvent) {
 			var oView = this.getView();
 			var oDialog = oView.byId("dialog");
 			if (!oDialog) {
-				oDialog = sap.ui.xmlfragment(oView.getId(), "com.create.empEmp_creation.view.Edit", this);
+				oDialog = sap.ui.xmlfragment(oView.getId(), "com.create.empEmp_creation.view.Fragment.Edit", this);
 				oView.addDependent(oDialog);
 
 			}

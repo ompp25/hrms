@@ -6,27 +6,27 @@
 				<content>
 					<Table id="tbl" items="{modelProdMain>/hs_hr_emp_passport}">
 						<columns>
-							<Column minScreenWidth="Phone" demandPopin="true">
-								<Text text="Document"/>
+							<Column minScreenWidth="Tablet" demandPopin="true">
+								<Text text="Document" vAlign="Middle"/>
 							</Column>
-							<Column minScreenWidth="Phone" demandPopin="true">
+							<Column minScreenWidth="Tablet" demandPopin="true">
 								<Text text="Number"/>
 							</Column>
-							<Column minScreenWidth="Phone" demandPopin="true">
+							<Column minScreenWidth="Tablet" demandPopin="true">
 								<Text text="Issued By"/>
 							</Column>
-							<Column minScreenWidth="Phone" demandPopin="true">
+							<Column minScreenWidth="Tablet" demandPopin="true">
 								<Text text="Issued By"/>
 							</Column>
-							<Column minScreenWidth="Phone" demandPopin="true">
+							<Column minScreenWidth="Tablet" demandPopin="true">
 								<Text text="Issued Date"/>
 							</Column>
-							
-							<Column
-						minScreenWidth="Phone"
-						demandPopin="true">
-						<Button icon="sap-icon://add" type="Transparent" ariaLabelledBy="editButtonLabel"/>
-					</Column>
+							<Column minScreenWidth="Tablet" demandPopin="true">
+								<Text text="Status"/>
+							</Column>
+							<Column minScreenWidth="Tablet" demandPopin="true">
+								<Button icon="sap-icon://add" type="Transparent" ariaLabelledBy="editButtonLabel"/>
+							</Column>
 						</columns>
 						<items>
 							<ColumnListItem vAlign="Middle">
@@ -36,11 +36,8 @@
 									<Text text="{path:'modelProdMain>cou_code', formatter:'.country'}"/>
 									<Text text="{path:'modelProdMain>ep_passportissueddate', formatter: '.formatDate'}"/>
 									<Text text="{path:'modelProdMain>ep_passportexpiredate', formatter: '.formatDate'}"/>
-									<!--<Text text="{modelProdMain>ep_i9_status}"/>-->
-									
+									<Text text="{modelProdMain>ep_i9_status}"/>
 									<Button icon="sap-icon://edit" type="Transparent" press="onEdit" ariaLabelledBy="editButtonLabel"/>
-									
-								
 								</cells>
 							</ColumnListItem>
 						</items>

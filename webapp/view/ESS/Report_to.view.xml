@@ -1,0 +1,68 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="com.create.empEmp_creation.controller.Report_to" xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="{i18n>title}" showHeader="false" class="pageh">
+				<content>
+					<Table id="idProductsTable" inset="false" items="" class="tbl">
+						<headerToolbar>
+							<Toolbar>
+								<Title text="Assigned SuperVisors" level="H2"/>
+							</Toolbar>
+						</headerToolbar>
+						<columns>
+							<Column width="12em">
+								<Text text="Name"/>
+							</Column>
+							<Column width="12em">
+								<Text text="Reporting Method"/>
+							</Column>
+						</columns>
+					</Table>
+					<Table id="idProducts" inset="false" items="">
+						<headerToolbar>
+							<Toolbar>
+								<Title text="Assigned Subordinates" level="H2"/>
+							</Toolbar>
+						</headerToolbar>
+						<columns>
+							<Column width="12em">
+								<Text text="Name"/>
+							</Column>
+							<Column width="12em">
+								<Text text="Reporting Method"/>
+							</Column>
+						</columns>
+					</Table>
+						<Table id="idProduc" inset="false" items="">
+						<headerToolbar>
+							<Toolbar>
+								<Title text="Attachments" level="H2"/>
+							</Toolbar>
+						</headerToolbar>
+						<columns>
+							<Column width="12em">
+								<Text text="FileName"/>
+							</Column>
+							<Column width="12em">
+								<Text text="Description"/>
+							</Column>
+							<Column width="12em">
+								<Text text="Size"/>
+							</Column>
+							<Column width="12em">
+								<Text text="Type"/>
+							</Column>
+							<Column width="12em">
+								<Text text="Date Added"/>
+							</Column>
+							<Column width="12em">
+								<Text text="Added By"/>
+							</Column>
+						</columns>
+					</Table>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

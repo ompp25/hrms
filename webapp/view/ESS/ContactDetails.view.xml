@@ -1,0 +1,48 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="com.create.empEmp_creation.controller.ContactDetails" xmlns:html="http://www.w3.org/1999/xhtml">
+	<App >
+		<pages>
+			<Page title="{i18n>title}" showHeader="false" class="pageh">
+				<content>
+					<HBox height="100%">
+						<VBox width="33%" class="sapUiResponsiveMargin">
+							<items>
+								<Label text="Address Street 1" class="ptext"></Label>
+								<Input value="" class="fname"/>
+								<Label text="Country" class="ptext"></Label>
+								<Input value="" editable="false" class="fname"/>
+								<Label text="Home Telephone" class="ptext"></Label>
+								<Input value="" class="fname"/>
+								<Label text="Work Email" class="ptext"></Label>
+								<Input value="" class="fname"/>
+							</items>
+						</VBox>
+						<VBox width="33%" class="sapUiResponsiveMargin">
+							<items>
+								<Label text="Address Street 2" class="ptext"></Label>
+								<Input value="" class="fname"/>
+								<Label text="State/Province" class="ptext"></Label>
+								<Input value="" class="fname"/>
+								<Label text="Mobile" class="ptext"></Label>
+								<Input value="" class="fname"/>
+								<Label text="Other Email" class="ptext"></Label>
+								<Input value="" editable="false" class="fname"/>
+							</items>
+						</VBox>
+						<VBox width="33%" class="sapUiResponsiveMargin">
+							<items>
+								<Label text="City" class="ptext"></Label>
+								<Input value="" class="fname"/>
+								<Label text="Zip/ Postal Code" class="ptext"></Label>
+								<Input value="" class="fname"/>
+								<Label text="Work Telephone" class="ptext"></Label>
+								<Input value="" class="fname"/>
+								<Button type="Submit" width="50%" text="SAVE"></Button>
+							</items>
+						</VBox>
+					</HBox>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

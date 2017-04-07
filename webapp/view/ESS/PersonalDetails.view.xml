@@ -1,0 +1,58 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="com.create.empEmp_creation.controller.PersonalDetails" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout">
+	<App id="app">
+		<pages>
+			<Page title="{i18n>title}" showHeader="false" class="pageh">
+				<content>
+					<HBox height="100%">
+						<VBox width="33%" class="sapUiResponsiveMargin">
+							<items>
+								<Label text="First Name" class="ptext"></Label>
+								<Input value="{PersonalDetails>/Details/emp_firstname}" id="firsname" class="fname"/>
+								<Label text="Employee Id" class="ptext"></Label>
+								<Input value="{PersonalDetails>/Details/employee_id}" editable="false" class="fname"/>
+								<Label text="Date of Birth" class="ptext"></Label>
+								<Input value="{path: 'PersonalDetails>/Details/emp_birthday', formatter: '.formatDate'}" class="fname"/>
+								
+								<Label text="Nationaity" class="ptext"></Label>
+								<Select forceSelection="false" width="100%" selectedKey="{/ProductCollection/1/ProductId}"
+									items="{ path: '/ProductCollection', sorter: { path: 'Name' } }">
+									<core:Item key="{ProductId}" text="{Name}"/>
+								</Select>
+							</items>
+						</VBox>
+						<VBox width="33%" class="sapUiResponsiveMargin">
+							<items>
+								<Label text="Middle Name" class="ptext"></Label>
+								<Input value="{PersonalDetails>/Details/emp_middle_name}" class="fname"/>
+								<Label text="Other Id" class="ptext"></Label>
+								<Input value="{PersonalDetails>/Details/emp_other_id}" class="fname"/>
+								<Label text="Marital Status" class="ptext"></Label>
+								<Input value="{PersonalDetails>/Details/emp_marital_status}" class="fname"/>
+								<Label text="Driving License Number" class="ptext"></Label>
+								<Input value="{PersonalDetails>/Details/emp_dri_lice_num}" editable="false" class="fname"/>
+							</items>
+						</VBox>
+						<VBox width="33%" class="sapUiResponsiveMargin">
+							<items>
+								<Label text="Last Name" class="ptext"></Label>
+								<Input value="{PersonalDetails>/Details/emp_lastname}" class="fname"/>
+								<Label text="Gender" class="ptext"></Label>
+								<RadioButtonGroup columns="5"  class="sapUiMediumMarginBottom">
+									<buttons>
+										<RadioButton id="RB3-1" text="Male"/>
+										<RadioButton id="RB3-2" text="Female"/>
+									</buttons>
+								</RadioButtonGroup>
+								<Label text="License Expiry Date" class="ptext"></Label>
+								<Input value="{path: 'PersonalDetails>/Details/emp_dri_lice_exp_date', formatter: '.formatDate'}" class="fname"/>
+								<Button type="Submit" width="50%" text="SAVE"></Button>
+							</items>
+						</VBox>
+					</HBox>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

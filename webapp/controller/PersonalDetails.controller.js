@@ -36,7 +36,6 @@ sap.ui.define([
 
 				}.bind(this)
 			});
-	
 		},
 		formatDate: function(sValue) {
 			/* var timeStamp = sValue;
@@ -61,14 +60,12 @@ sap.ui.define([
 			jQuery.sap.require("sap.ui.core.format.DateFormat");
 
 			var oDateFormat = sap.ui.core.format.DateFormat.getDateInstance({
-				pattern: "yyyy-MM-dd"
+				pattern: "dd-MMM-yyyy"
 			});
-           
+            
 			//console.log(oDateFormat.format(new Date(Number(value)))); // 2013/08/11
 			var date = oDateFormat.format(new Date(Number(value)));
 			return date;
-				
-			
 		}
 
 		/**
