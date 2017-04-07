@@ -1,0 +1,19 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:semantic="sap.m.semantic" controllerName="com.create.empEmp_creation.controller.Master"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+
+	<semantic:MasterPage title="Master">
+	
+		<semantic:content>
+		<Tree
+       		id="Tree"
+       		items="{path: '/'}" itemPress="onItemPress">
+       		<StandardTreeItem
+			title="{text}"
+			icon="{ref}" 
+			type="Active"
+			/>
+       	</Tree>
+		</semantic:content>
+		
+	</semantic:MasterPage>
+</mvc:View>

@@ -69,6 +69,10 @@
 					"bundleName": "com.create.empEmp_creation.i18n.i18n"
 				}
 			},
+			"":{
+				"type": "sap.ui.model.json.JSONModel",
+				"uri": "Tree.json"
+			},
 			"modelProdMain": {
 				"dataSource": "mainService"
 			
@@ -113,6 +117,27 @@
 				"viewName": "EssView",
 				"targetControl": "app",
 				"targetAggregation": "pages"
+			},
+			{
+				"pattern": "splitApp",
+				"name": "oapp",
+				"view": "Oapp",
+				"targetControl": "app",
+				"targetAggregation": "pages",
+				"subroutes": [{
+					"pattern": "splitApp/",
+					"name": "omasterpage",
+					"view": "Master",
+					"targetControl": "split",
+					"targetAggregation": "masterPages",
+					"subroutes": [{
+						"pattern": "splitApp/",
+						"name": "odetailpage",
+						"view": "Detail",
+						"targetcontrol": "split",
+						"targetAggregation": "detailPages"
+					}]
+				}]
 			}]
 		}
 	}

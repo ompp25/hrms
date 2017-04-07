@@ -14,12 +14,33 @@ sap.ui.define([
 			var uname= window.sessionStorage.getItem('uname');
 			this.getView().byId("bt3").setText("Welcome Mr."+uname);
 			},
+			hideBusyIndicator : function() {
+			sap.ui.core.BusyIndicator.hide();
+			},
+			showBusyIndicator : function (iDuration, iDelay) {
+			sap.ui.core.BusyIndicator.show(iDelay);
+ 
+			if (iDuration && iDuration > 0) {
+				if (this._sTimeoutId) {
+					jQuery.sap.clearDelayedCall(this._sTimeoutId);
+					this._sTimeoutId = null;
+				}
+ 
+				this._sTimeoutId = jQuery.sap.delayedCall(iDuration, this, function() {
+					this.hideBusyIndicator();
+				});
+			}
+		},
 			
 		getRouter: function() {
 			return sap.ui.core.UIComponent.getRouterFor(this);
 		},
 			onAccept: function(oEvent) {
+					this.showBusyIndicator(4000,0);
 					this.getRouter().navTo("View3");
+			},
+			onPressAdmin: function(oEvent){
+				this.getRouter().navTo("oapp");
 			}
 		/**
 		 * Similar to onAfterRendering, but this hook is invoked before the controller's View is re-rendered

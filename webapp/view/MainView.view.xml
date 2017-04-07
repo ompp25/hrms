@@ -19,15 +19,15 @@
 					</Bar>
 				</subHeader>
 				<content>
-					<l:VerticalLayout class="slideTilesLayout" transitionTime="100" displayTime="2500">
-						<SlideTile  class="firsttile" transitionTime="200" displayTime="2500">
+					<l:VerticalLayout class="slideTilesLayout" transitionTime="100" displayTime="25000">
+						<SlideTile  class="firsttile" transitionTime="200" displayTime="25000">
 							<tiles>
 								<GenericTile backgroundImage="images/DibyaSir.jpg" frameType="TwoByOne"
 									press="pressOnTileOne">
 									<tileContent>
 										<TileContent footer="August 21, 2016">
 											<content>
-												<NewsContent contentText="Admin Portal" subheader="Click here for Admin Portal"></NewsContent>
+												<NewsContent contentText="Admin Portal" subheader="Click here for Admin Portal" press="onPressAdmin"></NewsContent>
 											</content>
 										</TileContent>
 									</tileContent>
@@ -36,7 +36,7 @@
 									<tileContent>
 										<TileContent footer="August 21, 2016">
 											<content>
-												<NewsContent contentText="Admin Portal" subheader="Click here for Admin Portal"></NewsContent>
+												<NewsContent contentText="Admin Portal" subheader="Click here for Admin Portal" press="onPressAdmin"></NewsContent>
 											</content>
 										</TileContent>
 									</tileContent>
