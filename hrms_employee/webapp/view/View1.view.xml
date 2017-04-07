@@ -1,0 +1,76 @@
+<mvc:View controllerName="com.create.empEmp_creation.controller.View1" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form"
+	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<App>
+		<pages>
+			<Page title="{i18n>title}" showHeader="false">
+				<subHeader>
+					<Bar id="bb" design="Auto">
+					<contentLeft>
+						<core:Icon id="ic" src="sap-icon://sap-logo-shape" size="48px" height="48px" width="129.21875px" visible="true"/>
+					</contentLeft>
+					<contentMiddle>
+						<Label id="lbm" text="Human Resource Department" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+					</contentMiddle>
+					<contentRight>
+						<Button id="bt1" iconDensityAware="false" text="" type="Default" icon="sap-icon://sap-ui5" iconFirst="true" width="auto" enabled="true" visible="true"/>
+						<Button id="bt2" iconDensityAware="false" text="" type="Default" icon="sap-icon://sys-help" iconFirst="true" width="auto" enabled="true" visible="true"/>
+						<Button id="bt3" iconDensityAware="false" text="{TempModel>/Id}" type="Default" icon="sap-icon://account" iconFirst="true" width="auto" enabled="true" visible="true" press="handlePopoverPress"/>
+						<Button id="bt4" iconDensityAware="false" text="" type="Default" icon="" iconFirst="true" width="auto" enabled="true" visible="false" press="handlePopoverPress1"/>
+					</contentRight>
+				</Bar>
+				</subHeader>
+				<content>
+					<Text text="{TempModel>/Id}"/>
+					<VBox class="sapUiSmallMargin">
+						<f:SimpleForm id="SimpleFormDisplay471" minWidth="1024" maxContainerCols="2" editable="false" layout="ResponsiveGridLayout"
+							title="Personal Information" labelSpanL="4" labelSpanM="4" emptySpanL="1" emptySpanM="1" columnsL="1" columnsM="1">
+							<f:content>
+								<Label text="EmployeeNumber"/>
+								<Input value="" id="Emp_numb" width="50%"/>
+								<Label text="FirstName"/>
+								<Input value="" id="firstName" width="50%"/>
+								<Label text="MiddleName"/>
+								<Input value="" id="middleName" width="50%"/>
+								<Label text="LastName"/>
+								<Input value="" id="lastName" width="50%"/>
+								<Label text="Mobile"/>
+								<Input value="" id="mobile" width="50%"/>
+							</f:content>
+						</f:SimpleForm>
+					</VBox>
+					<VBox class="sapUiSmallMargin">
+						<f:SimpleForm id="SimpleFormDisplay480_Trial" maxContainerCols="3" editable="false" layout="ResponsiveGridLayout" title="Address"
+							labelSpanXL="4" labelSpanL="4" labelSpanM="4" emptySpanXL="0" emptySpanL="0" emptySpanM="0" columnsXL="3" columnsL="2" columnsM="2">
+							<f:content>
+								<core:Title text="Residence"/>
+								<Label text="Street1"/>
+								<Input value="" id="street1"/>
+								<Label text="Street2"/>
+								<Input value="" id="street2"/>
+								<Label text="ZIP Code/City"/>
+								<Input value="" id="zip"/>
+								<Label text="Country"/>
+								<Input value="" id="country"/>
+								<core:Title text="Contact data"/>
+								<Label text="Email"/>
+								<Input value="" id="email"/>
+								<Label text="Contact(R)"/>
+								<Input value="" id="contact"/>
+								<core:Title text="Online"/>
+								<Label text="Web"/>
+								<Text text="{Url}"/>
+								<Label text="Twitter"/>
+								<Text text="{Twitter}"/>
+								<!--				<Label text="SMS" />
+				<Text text="{Sms}" />-->
+								<ComboBox items="{ path: 'modelProdMain>/ohrm_user_role'}">
+									<core:Item key="{modelProdMain>id}" text="{modelProdMain>display_name}"/>
+								</ComboBox>
+							</f:content>
+						</f:SimpleForm>
+					</VBox>
+					<Button type="Accept" text="Save" press="onCreate" ariaDescribedBy="acceptButtonDescription genericButtonDescription"/></content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

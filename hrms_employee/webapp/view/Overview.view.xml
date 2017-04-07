@@ -1,0 +1,27 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns="sap.m"
+	controllerName="com.create.empEmp_creation.controller.Overview" xmlns:html="http://www.w3.org/1999/xhtml">
+	<App id="app" backgroundImage="images/blog_financeHR.jpg">
+		<pages>
+			<Page title="{i18n>title}" showHeader="false" class="pageh">
+				<content>
+					<HBox height="90%" class="sapUiResponsiveMargin">
+						<VBox class="first" width="50%" backgroundDesign="Transparent">
+							<items>
+								<Text text="Innovador IT Solution Pvt Ltd." class="compname"/>
+								<Text text="P-192, Scheme Vii-M, 2nd floor, C.I.T. Road, Ultadanga, Kolkata-700067, India" class="address"/>
+							</items>
+						</VBox>
+						<VBox class="second" width="50%" backgroundDesign="Translucent">
+							<items>
+								<Text text="Login Here" class="loginTitle"/>
+								<Input value="" id="uname" placeholder="Enter User Name" width="50%" backgroundDesign="Translucent" class="username"/>
+								<Input value="" type="Password" id="pwd" placeholder="Enter Password" width="50%" backgroundDesign="Translucent" class="password"/>
+								<Button type="Emphasized" text="Login" class="botton1" width="50%" press="onLogin"/>
+							</items>
+						</VBox>
+					</HBox>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

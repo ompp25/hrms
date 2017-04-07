@@ -1,0 +1,160 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="com.create.empEmp_creation.controller.MainView"
+	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:l="sap.ui.layout">
+	<App>
+		<pages>
+			<Page title="Title" showHeader="false" class="page1">
+				<subHeader>
+					<Bar id="bb" design="Auto" class="bar">
+						<contentLeft>
+						<Button id="bt3" class="btnc" iconDensityAware="false" text="" type="Default" icon="sap-icon://account" iconFirst="true" width="auto"
+								enabled="true" visible="true" press="handlePopoverPress"/>
+						</contentLeft>
+						<contentMiddle>
+							<Label class="bar" id="lbm" text="Human Resource Department" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+						</contentMiddle>
+						<contentRight>
+						
+							<Image src="images/inno2.png" densityAware="false" class="logo"></Image>
+						</contentRight>
+					</Bar>
+				</subHeader>
+				<content>
+					<l:VerticalLayout class="slideTilesLayout" transitionTime="100" displayTime="2500">
+						<SlideTile  class="firsttile" transitionTime="200" displayTime="2500">
+							<tiles>
+								<GenericTile backgroundImage="images/DibyaSir.jpg" frameType="TwoByOne"
+									press="pressOnTileOne">
+									<tileContent>
+										<TileContent footer="August 21, 2016">
+											<content>
+												<NewsContent contentText="Admin Portal" subheader="Click here for Admin Portal"></NewsContent>
+											</content>
+										</TileContent>
+									</tileContent>
+								</GenericTile>
+								<GenericTile backgroundImage="http://www.exactlly.com/blog/wp-content/uploads/HRMS-professional-organisation-300x250.jpg" frameType="TwoByOne">
+									<tileContent>
+										<TileContent footer="August 21, 2016">
+											<content>
+												<NewsContent contentText="Admin Portal" subheader="Click here for Admin Portal"></NewsContent>
+											</content>
+										</TileContent>
+									</tileContent>
+								</GenericTile>
+							</tiles>
+						</SlideTile>
+						<SlideTile  class="secondtile" transitionTime="200" displayTime="2500">
+							<tiles>
+								<GenericTile backgroundImage="images/workforce.jpg" frameType="TwoByOne"
+									press="pressOnTileOne">
+									<tileContent>
+										<TileContent footer="Innovador">
+											<content>
+												<NewsContent contentText="Attendance Portal" subheader="Click here to go inside Attendance Portal"></NewsContent>
+											</content>
+										</TileContent>
+									</tileContent>
+								</GenericTile>
+								<GenericTile backgroundImage="http://cdn1.bigcommerce.com/server3400/k86idoqw/products/1007/images/36/employee_count_upgrade_timeattendance_icon_time__15545.1364858748.500.750.jpg?c=2" frameType="TwoByOne" state="Active">
+									<tileContent>
+										<TileContent footer="Innovador">
+											<content>
+												<NewsContent contentText="Attendance Portal" subheader="Click here to go inside Attendance Portal"></NewsContent>
+											</content>
+										</TileContent>
+									</tileContent>
+								</GenericTile>
+							</tiles>
+						</SlideTile>
+						<SlideTile  class="thirdtile" transitionTime="300" displayTime="2500">
+							<tiles>
+								<GenericTile backgroundImage="http://kroegerappraisal.com/wp-content/uploads/2010/04/appraisal31.jpg" frameType="TwoByOne"
+									press="pressOnTileOne">
+									<tileContent>
+										<TileContent footer="Innovador">
+											<content>
+												<NewsContent contentText="Appraisal Portal" subheader="Click here to go inside Appraisal Portal"></NewsContent>
+											</content>
+										</TileContent>
+									</tileContent>
+								</GenericTile>
+								<GenericTile backgroundImage="images/performance.jpg" frameType="TwoByOne" state="active">
+									<tileContent>
+										<TileContent footer="Innovador">
+											<content>
+												<NewsContent contentText="Appraisal Portal" subheader="Click here to go inside Appraisal Portal"></NewsContent>
+											</content>
+										</TileContent>
+									</tileContent>
+								</GenericTile>
+							</tiles>
+						</SlideTile>
+						<SlideTile  class="fourthtile" transitionTime="400" displayTime="2500">
+							<tiles>
+								<GenericTile backgroundImage="http://www.kineticdata.com/images/wally/KDU_guys-01.jpg" frameType="TwoByOne"
+									press="pressOnTileOne">
+									<tileContent>
+										<TileContent footer="Innovador">
+											<content>
+												<NewsContent contentText="OnBoarding Portal" subheader="Click here to go inside OnBoarding Portal"></NewsContent>
+											</content>
+										</TileContent>
+									</tileContent>
+								</GenericTile>
+								<GenericTile backgroundImage="http://academy.whatfix.com/wp-content/uploads/2015/06/HEADER-ONBOARDING-TOOLKIT-300x190.png" frameType="TwoByOne" state="active">
+									<tileContent>
+										<TileContent footer="Innovador">
+											<content>
+												<NewsContent contentText="OnBoarding Portal" subheader="Click here to go inside OnBoarding Portal"></NewsContent>
+											</content>
+										</TileContent>
+									</tileContent>
+								</GenericTile>
+							</tiles>
+						</SlideTile>
+						<SlideTile  class="fifthtile" transitionTime="500" displayTime="2500">
+							<tiles>
+								<GenericTile backgroundImage="https://tax.thomsonreuters.com/wp-content/images/cs-professional-suite/graphics/live-payroll-feature.jpg" frameType="TwoByOne"
+									press="pressOnTileOne">
+									<tileContent>
+										<TileContent footer="August 21, 2016">
+											<content>
+												<NewsContent contentText="Payroll Portal" subheader="Click here to go inside Payroll Portal"></NewsContent>
+											</content>
+										</TileContent>
+									</tileContent>
+								</GenericTile>
+								<GenericTile backgroundImage="https://www.ecasd.us/ECASD/media/District-Site/Payroll%20documents/pay-roll.png" frameType="TwoByOne" state="active">
+									<tileContent>
+										<TileContent footer="August 21, 2016">
+											<content>
+												<NewsContent contentText="Payroll Portal" subheader="Click here to go inside Payroll Portal"></NewsContent>
+											</content>
+										</TileContent>
+									</tileContent>
+								</GenericTile>
+							</tiles>
+						</SlideTile>
+					</l:VerticalLayout>
+				</content>
+				<footer>
+            <OverflowToolbar id="otbFooter">
+                <ToolbarSpacer/>
+                <Button type="Accept" text="Accept" press="onAccept">
+                    <layoutData><OverflowToolbarLayoutData moveToOverflow="false" /></layoutData>
+                </Button>
+                <Button type="Reject" text="Reject">
+                    <layoutData><OverflowToolbarLayoutData moveToOverflow="false" /></layoutData>
+                </Button>
+                <OverflowToolbarButton text="Delete" icon="sap-icon://delete"/>
+                <OverflowToolbarButton text="Edit" icon="sap-icon://edit"/>
+                <OverflowToolbarButton text="Add" icon="sap-icon://add"/>
+                <OverflowToolbarButton text="Favorite" icon="sap-icon://favorite"/>
+                <OverflowToolbarButton text="Flag" icon="sap-icon://flag"/>
+ 
+            </OverflowToolbar>
+		</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

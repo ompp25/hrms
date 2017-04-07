@@ -1,0 +1,330 @@
+/******************************/
+
+
+/* For OverView */
+
+
+/******************************/
+
+
+/* OverView VBox class name: Second */
+
+.second.sapMFlexBoxBGTranslucent {
+    background-color: rgba(43, 48, 64, 0.84);
+}
+
+
+/* OverView Text for Company name class name: compname */
+
+.compname.sapMText {
+    display: inline-block;
+    box-sizing: border-box;
+    white-space: pre-line;
+    word-wrap: break-word;
+    cursor: text;
+    font-size: xx-large;
+    font-family: "72-Web", Arial, Helvetica, sans-serif;
+    line-height: normal;
+    color: #e7e7ec;
+}
+
+
+/* OverView Text for Address name of Company class name: address */
+
+.address.sapMText {
+    display: inline-block;
+    box-sizing: border-box;
+    white-space: pre-line;
+    word-wrap: break-word;
+    cursor: text;
+    font-size: medium;
+    font-family: "72-Web", Arial, Helvetica, sans-serif;
+    line-height: normal;
+    color: #e7e7ec;
+}
+
+
+/* OverView Text for Login Title class name: loginTitle */
+
+.loginTitle.sapMText {
+    display: inline-block;
+    box-sizing: border-box;
+    white-space: pre-line;
+    word-wrap: break-word;
+    cursor: text;
+    font-size: 1.875rem;
+    font-family: "72-Web", Arial, Helvetica, sans-serif;
+    line-height: normal;
+    color: #5ddae8;
+    position: ABSOLUTE;
+    top: 74px;
+    left: 35%;
+}
+
+
+/* OverView Input for Username class name: username */
+
+/*.username.sapMInputBase,*/
+/*.sapMInputBaseInner,*/
+/*.sapMInputBasePlaceholde {*/
+/*    position: relative;*/
+/*    left: 17% !important;*/
+/*    top: 325% !important;*/
+/*}*/
+.username.sapMInputBase {
+    height: 3rem;
+    background: transparent;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    left: 26%;
+    top: 127px;
+}
+
+.password.sapMInputBase {
+    height: 3rem;
+    background: transparent;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    left: 26%;
+    top: 130px;
+}
+
+
+/* OverView Input for Password class name: password */
+
+/*.password.sapMInputBase,*/
+/*.sapMInputBaseInner,*/
+/*.sapMInputBasePlaceholde {*/
+/*    position: relative;*/
+/*    left: 17%;*/
+/*}*/
+
+span.sapMBtnInner.sapMBtnEmphasized {
+    background-image: none;
+    background-color: #de0a0a;
+    ;
+    border-color: #d61838;
+    color: #ffffff;
+    text-shadow: 0 0 0.125rem rgba(0, 0, 0, 0.5);
+    position: relative;
+    left: 52%;
+    top: 135px;
+}
+
+
+/******************************/
+
+
+/* For Mainview*/
+
+
+/******************************/
+
+
+/* Main view page 1  class name : page1*/
+
+.page1.sapMNavItem,
+.page1.sapMNavItem.sapMPage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 100%;
+    background: linear-gradient(to right, #0090cf 0, #00b7b3 100%)
+}
+
+
+/* Main view Bar Background-color */
+
+.bar.sapMIBar.sapMSubHeader-CTX {
+    color: #e2d9d9;
+    background-color: #a72121;
+    background: linear-gradient(to right, #7b82d4 0, #0bec91 100%);
+}
+
+
+/* Main view Bar Button Text Color class name : btnc */
+
+.btnc.sapMBtn .sapMBtnContent {
+    display: block;
+    color: white;
+    font-size: MEDIUM;
+}
+
+
+/* Main view Bar Button Icon Color class name : btnc */
+
+.btnc.sapMBtn .sapMBtnIcon {
+    cursor: inherit;
+    color: rgb(255, 252, 252);
+}
+
+
+/* Main view Bar Logo*/
+
+.sapMIBar.sapMBar .sapMBarChild:first-child {
+    margin-left: 0;
+    height: 92%;
+    width: 39%;
+    /* background-color: yellow; */
+}
+
+
+/* Main view Bar Text(middle content)  class name : barcont*/
+
+.sapMIBar-CTX .sapMLabel {
+    color: #0d0e0e;
+    text-shadow: 1px 0px 0px rgb(43, 43, 43);
+    font-size: larger;
+    font-style: oblique;
+}
+
+
+/* CSS For All Tiles In Main View*/
+
+.sapMTextMaxLine {
+    display: block;
+    font-size: large;
+    text-align: center;
+}
+
+.sapMTileCnt.News {
+    height: 4.125rem;
+    margin-top: 2.3125rem;
+}
+
+
+/* Main view First Tile class name : firsttile*/
+
+.firsttile.sapMST.TwoByOne {
+    width: 22.5rem;
+    height: 11rem;
+    position: absolute;
+    left: 5%;
+    top: 25%;
+}
+
+
+/* Main view Second Tile class name : secondtile*/
+
+.secondtile.sapMST.TwoByOne {
+    width: 22.5rem;
+    height: 11rem;
+    position: absolute;
+    top: 25%;
+    left: 37%;
+}
+
+
+/* Main view Third Tile class name : thirdtile*/
+
+.thirdtile.sapMST.TwoByOne {
+    width: 22.5rem;
+    height: 11rem;
+    position: absolute;
+    top: 25%;
+    left: 70%;
+}
+
+
+/* Main view Fourth Tile class name : fourthtile*/
+
+.fourthtile.sapMST.TwoByOne {
+    width: 22.5rem;
+    height: 11rem;
+    position: absolute;
+    top: 61%;
+    left: 19%;
+}
+
+
+/* Main view Fifth Tile class name : fifthtile*/
+
+.fifthtile.sapMST.TwoByOne {
+    width: 22.5rem;
+    height: 11rem;
+    position: absolute;
+    top: 61%;
+    left: 50%;
+}
+
+
+/******************************/
+
+
+/* For ESSview*/
+
+
+/******************************/
+
+.sapUxAPObjectPageHeaderContentDesign-Light,
+.sapUxAPObjectPageHeaderContentDesign-Dark {
+    background: linear-gradient(to left, #C33764, #1D2671);
+}
+
+.sapUxAPObjectPageHeaderIdentifier {
+    background: linear-gradient(to left, #C33764, #1D2671);
+}
+
+.sapUxAPObjectPageHeaderIdentifier .sapUxAPObjectPageHeaderIdentifierDescription {
+    font-size: 0.875rem;
+    color: #f7f4f4;
+}
+
+.sapUxAPObjectPageHeaderIdentifier .sapUxAPObjectPageHeaderIdentifierTitle {
+    color: #ffffff;
+}
+
+.sapUxAPObjectPageHeaderIdentifierTitleInContent,
+.sapUxAPObjectPageHeaderIdentifierSubTitleInContent {
+    color: #ffffff;
+}
+
+.sapUxAPObjectPageHeaderDetails .sapMLabel {
+    color: #ffffff;
+}
+
+.sapUxAPObjectPageContainer,
+.sapUxAPObjectPageContainer + div,
+.sapUxAPObjectPageHeaderDetailsHidden {
+    /* background-color: #ca9090; */
+    background: linear-gradient(to left, #000000, #434343);
+}
+
+.sapUxAPAnchorBar.sapMTB {
+    border: none;
+    box-shadow: inset 0 -0.125rem #d1e0ee, 0 0.125rem 0 0 #843069;
+    background: linear-gradient(to left, #C33764, #1D2671);
+}
+
+.sapUxAPAnchorBar .sapUxAPAnchorBarButton .sapMBtnInner.sapMBtnTransparent.sapMBtnHoverable:hover .sapMBtnContent,
+.sapUxAPAnchorBar .sapUxAPAnchorBarButton.sapMBtn:hover>.sapMBtnHoverable .sapMBtnContent,
+.sapUxAPAnchorBar .sapUxAPAnchorBarButton.sapMBtn:hover>.sapMBtnHoverable .sapMBtnIcon {
+    color: #ffffff;
+}
+
+.sapUxAPAnchorBar .sapUxAPAnchorBarButton.sapUxAPAnchorBarButtonSelected .sapMBtnContent,
+.sapUxAPAnchorBar .sapUxAPAnchorBarButton.sapUxAPAnchorBarButtonSelected .sapMBtnIcon {
+    color: #f7f6f6;
+}
+
+.sapUxAPAnchorBar .sapUxAPAnchorBarButton .sapMBtnContent {
+    font-family: "72-Web", Arial, Helvetica, sans-serif;
+    font-size: 0.875rem;
+    font-weight: normal;
+    color: #fdfdfd;
+}
+.fname.sapMInputBase,
+.sapMInputBaseInner,
+.sapMInputBasePlaceholde {
+    position: relative;
+    left: 0 !important;
+    top: 0% !important;
+}
+
+.ptext.sapMLabel {
+    color: #ffffff;
+   
+}

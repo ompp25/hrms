@@ -1,0 +1,119 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" controllerName="com.create.empEmp_creation.controller.EssView"
+	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:m="sap.m" xmlns="sap.uxap" xmlns:layout="sap.ui.layout">
+	<m:App>
+		<m:pages>
+			<m:Page showHeader="false">
+				<m:subHeader>
+					<m:Bar id="bb" design="Auto" class="bar">
+						<m:contentLeft>
+						<m:Button id="bt3" class="btnc" iconDensityAware="false" text="" type="Default" icon="sap-icon://account" iconFirst="true" width="auto"
+								enabled="true" visible="true" press="handlePopoverPress"/>
+						</m:contentLeft>
+						<m:contentMiddle>
+							<m:Label class="bar" id="lbm" text="Employee Self Service (ESS)" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+						</m:contentMiddle>
+						<m:contentRight>
+						
+							<m:Image src="images/inno2.png" densityAware="false" class="logo"></m:Image>
+						</m:contentRight>
+					</m:Bar>
+				</m:subHeader>
+				<m:content>
+					<ObjectPageLayout id="ObjectPageLayout" enableLazyLoading="true" useIconTabBar="true" showTitleInHeaderContent="true">
+		<headerTitle>
+			<ObjectPageHeader objectImageURI="images/DibyaSir.jpg"
+							  objectTitle="Dibyakant Deo"
+							  objectImageShape="Circle"
+							  objectSubtitle="Director">
+				<actions>
+					<ObjectPageHeaderActionButton icon="sap-icon://activate" text="show section" type="Emphasized"/>
+					<ObjectPageHeaderActionButton icon="sap-icon://show" text="show state" type="Emphasized"/>
+				</actions>
+			</ObjectPageHeader>
+		</headerTitle>
+ 
+		<headerContent>
+			<layout:VerticalLayout>
+				<m:Link text="+33 6 4512 5158"/>
+				<m:Link text="deo.dibya@sap.com"/>
+			</layout:VerticalLayout>
+ 
+			<layout:HorizontalLayout>
+				<m:Image src="http://www.persianfootball.com/forums/images/BP-White/misc/icon-twitter.png"></m:Image>
+				<m:Image src="http://www.teatro.it/images/linkedin-icon.png"></m:Image>
+			</layout:HorizontalLayout>
+ 
+			<layout:VerticalLayout>
+				<m:Label text="Hello! I am Tim and I use UxAP"/>
+				<m:VBox height="63px">
+					<m:Label text="Achieved goals"/>
+					<m:ProgressIndicator
+							percentValue="30"
+							displayValue="30%"
+							showValue="true"
+							state="None"/>
+				</m:VBox>
+			</layout:VerticalLayout>
+ 
+			<layout:VerticalLayout>
+				<m:Label text="San Jose, USA"/>
+			</layout:VerticalLayout>
+		</headerContent>
+ 
+		<sections>
+			<ObjectPageSection id="goals" title="Personal Details">
+			<subSections>
+				<ObjectPageSubSection id="goalsSS1" title="">
+					<blocks>
+					<mvc:XMLView viewName="com.create.empEmp_creation.view.PersonalDetails" />
+					</blocks>
+				</ObjectPageSubSection>
+			</subSections>
+			</ObjectPageSection>
+			
+			<ObjectPageSection id="contact" title="Contact Details">
+			<subSections>
+				<ObjectPageSubSection id="contactId" title="">
+					<blocks>
+					         <mvc:XMLView viewName="com.create.empEmp_creation.view.PersonalDetails" />
+					</blocks>
+				</ObjectPageSubSection>
+			</subSections>
+			</ObjectPageSection>
+ 
+			<ObjectPageSection id="personal" title="Immigration">
+				<subSections>
+					<ObjectPageSubSection id="personalSS1" title="">
+						<blocks>
+								<mvc:XMLView viewName="com.create.empEmp_creation.view.Immigration" />
+						</blocks>
+					</ObjectPageSubSection>
+                </subSections>
+			</ObjectPageSection>
+ 
+			<ObjectPageSection id="employment" title="Report-to">
+				<subSections>
+					<ObjectPageSubSection id="employmentSS1" title="">
+						<blocks>
+						<m:Text text="omprakashthak"/>
+						</blocks>
+					</ObjectPageSubSection>
+ 
+				</subSections>
+			</ObjectPageSection>
+			<ObjectPageSection id="connections" title="Salary">
+				<subSections>
+					<ObjectPageSubSection id="connectionsSS1" title="">
+						<blocks>
+						<m:Text text="omprakash"/>
+						</blocks>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
+		</sections>
+	</ObjectPageLayout>
+				</m:content>
+			</m:Page>
+		</m:pages>
+	</m:App>
+</mvc:View>
