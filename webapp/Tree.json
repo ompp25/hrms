@@ -1,51 +1,74 @@
 [
 	{
-		"text": "Node1",
-		"ref": "sap-icon://attachment-audio",
+		"text": "User Management",
+		"ref": "sap-icon://crm-service-manager",
 		"nodes":
 		[
 			{
-				"text": "Node1-1",
-				"ref": "sap-icon://attachment-e-pub",
-				"nodes":[
-					{
-						"text": "Node1-1-1",
-						"ref": "sap-icon://attachment-html"
-					},
-					{
-						"text": "Node1-1-2",
-						"ref": "sap-icon://attachment-photo",
-						"nodes":[
-							{
-								"text": "Node1-1-1",
-								"ref": "sap-icon://attachment-text-file",
-								"nodes":[
-									{
-										"text": "Node1-1-1-1",
-										"ref": "sap-icon://attachment-video"
-									},
-									{
-										"text": "Node1-1-1-2",
-										"ref": "sap-icon://attachment-zip-file"
-									},
-									{
-										"text": "Node1-1-1-3",
-										"ref": "sap-icon://course-program"
-									}
-								]
-							}
-						]
-					}
-				]
+				"text": "Users",
+				"ref": "sap-icon://user-settings"
+			}
+			]
+	},
+	{
+		"text": "Job",
+		"ref": "sap-icon://work-history",
+		"nodes":
+		[
+			{
+				"text": "Job Title",
+				"ref": "sap-icon://business-card"
 			},
 			{
-				"text": "Node1-2",
-				"ref": "sap-icon://create"
+				"text": "Pay Grades",
+				"ref": "sap-icon://simple-payment"
+			},
+			{
+				"text": "Employment Status",
+				"ref": "sap-icon://employee"
+			},
+			{
+				"text": "Job Categories",
+				"ref": "sap-icon://group"
 			}
 		]
 	},
-	{
-		"text": "Node2",
-		"ref": "sap-icon://customer-financial-fact-sheet"
+		{
+		"text": "Organization",
+		"ref": "sap-icon://building",
+		"nodes":
+		[
+			{
+				"text": "General Information",
+				"ref": "sap-icon://message-information"
+			},
+			{
+				"text": "Location",
+				"ref": "sap-icon://locate-me"
+			},
+			{
+				"text": "Structure",
+				"ref": "sap-icon://batch-payments"
+			}
+		]
+	},
+		{
+		"text": "Qualifications",
+		"ref": "sap-icon://study-leave",
+		"nodes":
+		[
+			{
+				"text": "Skills",
+				"ref": "sap-icon://attachment-e-pub"
+			},
+			{
+				"text": "Education",
+				"ref": "sap-icon://education"
+			},
+			{
+				"text": "Languages",
+				"ref": "sap-icon://text-formatting"
+			}
+		]
 	}
 ]
