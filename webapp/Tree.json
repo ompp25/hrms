@@ -6,7 +6,6 @@
 		[
 			{
 				"text": "Users",
-<<<<<<< Upstream, based on fc5e0cdfaa4e9361fff993cad6af70d1e9c86807
 				"ref": "sap-icon://user-settings",
 				"custom": "detailDetail"
 			}
@@ -21,29 +20,11 @@
 				"text": "Job Title",
 				"ref": "sap-icon://business-card",
 				"custom": "detail2"
-=======
-				"ref": "sap-icon://user-settings"
-			}
-			]
-	},
-	{
-		"text": "Job",
-		"ref": "sap-icon://work-history",
-		"nodes":
-		[
-			{
-				"text": "Job Title",
-				"ref": "sap-icon://business-card"
->>>>>>> 4782a8d json changes
 			},
 			{
 				"text": "Pay Grades",
-<<<<<<< Upstream, based on fc5e0cdfaa4e9361fff993cad6af70d1e9c86807
 				"ref": "sap-icon://simple-payment",
 				"custom": "detail3"
-=======
-				"ref": "sap-icon://simple-payment"
->>>>>>> 4782a8d json changes
 			},
 			{
 				"text": "Employment Status",
