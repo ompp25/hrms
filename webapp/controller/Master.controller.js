@@ -6,7 +6,7 @@ sap.ui.define([
 	return Controller.extend("com.create.empEmp_creation.controller.Master", {
 
 		onItemPress: function(oEvent){
-			
+			alert(oEvent);
 		}
 
 	});

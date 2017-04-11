@@ -1,6 +1,126 @@
 <mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="com.create.empEmp_creation.controller.Oapp"
-	xmlns:html="http://www.w3.org/1999/xhtml">
-	<SplitApp id="split">
-		
+	xmlns:custom="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" xmlns:html="http://www.w3.org/1999/xhtml">
+	<SplitApp id="split" initialDetail="detail" initialMaster="master2">
+		<detailPages>
+			<Page id="detail" title="Dashboard" class="sapUiStdPage">
+				<content>
+					<Panel width="auto" class="pnl sapUiResponsiveMargin">
+						<Text text="Please note that this demo does not include our performance module. This will be available soon."/>
+					</Panel>
+				</content>
+			</Page>
+			<Page id="detailDetail" title="Detail Detail" class="sapUiStdPage" showNavButton="true" navButtonText="Back"
+				navButtonPress="onPressDetailBack">
+				<content>
+					<Table id="idAdmin" inset="false" items="{ path: '/Role', sorter: { path: 'UserRole', descending: true } }" mode="MultiSelect" width="auto"
+						class="sapUiResponsiveMargin">
+						<columns>
+							<Column width="12em">
+								<Toolbar design="Transparent">
+									<Text text="User Role"/>
+									<Button icon="sap-icon://sort" press="onSort" ariaLabelledBy="sortButtonLabel"/>
+								</Toolbar>
+							</Column>
+							<Column minScreenWidth="Tablet" demandPopin="true">
+								<Text text="User Role Type"/>
+							</Column>
+							<Column hAlign="Right">
+								<Text text=""/>
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem>
+								<cells>
+									<Text text="{UserRole}"/>
+									<Text text="{UserRoleType}"/>
+									<Toolbar>
+										<ToolbarSpacer/>
+										<ToolbarSpacer/>
+										<Button icon="sap-icon://edit" press="onFragPress" class="customButtonIcon"/>
+									</Toolbar>
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+				</content>
+			</Page>
+			<Page id="detail2" title="Detail 3 Page" class="sapUiStdPage" showNavButton="true" navButtonText="Back" navButtonPress="onPressDetailBack">
+				<content>
+					<Label text="This is Detail Page3"/>
+					<Input/>
+					<Label text="Label 2"/>
+					<Input/>
+					<Label text="Label 3"/>
+					<Input/>
+					<Label text="Label 4"/>
+					<Input/>
+					<Label text="Label 5"/>
+					<Input/>
+				</content>
+			</Page>
+			<Page id="detail3" title="Detail 3 Page" class="sapUiStdPage" showNavButton="true" navButtonText="Back" navButtonPress="onPressDetailBack">
+				<content>
+					<Table id="idProductsTable" inset="false" items="{ path: '/LineItems', sorter: { path: 'Name' } }" mode="MultiSelect" width="auto"
+						class="sapUiResponsiveMargin">
+						<headerToolbar>
+							<Toolbar>
+								<Title text="Products" level="H2"/>
+							</Toolbar>
+						</headerToolbar>
+						<columns>
+							<Column width="12em">
+								<Text text="username"/>
+							</Column>
+							<Column minScreenWidth="Tablet" demandPopin="true">
+								<Text text="userrole"/>
+							</Column>
+							<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Right">
+								<Text text="EmployeeName"/>
+							</Column>
+							<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center">
+								<Text text="Status"/>
+							</Column>
+							<Column hAlign="Right">
+								<Text text="Region"/>
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem>
+								<cells>
+									<ObjectIdentifier title="{username}"/>
+									<Text text="{userrole}"/>
+									<Text text="{EmployeeName}"/>
+									<Text text="{Status}"/>
+									<Toolbar class="customToolBar custom-width">
+										<ToolbarSpacer/>
+										<ToolbarSpacer/>
+										<Button icon="sap-icon://edit" press="onEditPress" class="customButtonIcon"/>
+										<Button icon="sap-icon://sys-cancel" press="onDeletePress" class="customButtonIcon cancelIcon"/>
+									</Toolbar>
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+				</content>
+			</Page>
+		</detailPages>
+		<masterPages>
+			<!--<Page id="master" title="Master 1" icon="sap-icon://action" class="sapUiStdPage">
+				<content>
+					<List>
+						<items>
+							<StandardListItem title="To Master2" type="Navigation" press="onPressGoToMaster"/>
+						</items>
+					</List>
+				</content>
+			</Page>-->
+			<Page id="master2" showHeader="true" title="Master" class="sapUiStdPage" showNavButton="false" navButtonPress="onPressMasterBack">
+				<content>
+							<Tree id="Tree" items="{path: '/'}" itemPress="onListItemPress">
+						<StandardTreeItem title="{text}" icon="{ref}" iconDensityAware="false" type="Active" custom:to="{custom}"/>
+					</Tree>
+				</content>
+			</Page>
+		</masterPages>
 	</SplitApp>
 </mvc:View>

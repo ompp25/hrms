@@ -123,21 +123,8 @@
 				"name": "oapp",
 				"view": "Oapp",
 				"targetControl": "app",
-				"targetAggregation": "pages",
-				"subroutes": [{
-					"pattern": "splitApp/",
-					"name": "omasterpage",
-					"view": "Master",
-					"targetControl": "split",
-					"targetAggregation": "masterPages",
-					"subroutes": [{
-						"pattern": "splitApp/",
-						"name": "odetailpage",
-						"view": "Detail",
-						"targetcontrol": "split",
-						"targetAggregation": "detailPages"
-					}]
-				}]
+				"targetAggregation": "pages"
+				
 			}]
 		}
 	}

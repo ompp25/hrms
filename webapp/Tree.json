@@ -6,7 +6,8 @@
 		[
 			{
 				"text": "Users",
-				"ref": "sap-icon://user-settings"
+				"ref": "sap-icon://user-settings",
+				"custom": "detailDetail"
 			}
 			]
 	},
@@ -17,11 +18,13 @@
 		[
 			{
 				"text": "Job Title",
-				"ref": "sap-icon://business-card"
+				"ref": "sap-icon://business-card",
+				"custom": "detail2"
 			},
 			{
 				"text": "Pay Grades",
-				"ref": "sap-icon://simple-payment"
+				"ref": "sap-icon://simple-payment",
+				"custom": "detail3"
 			},
 			{
 				"text": "Employment Status",
