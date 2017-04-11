@@ -1,6 +1,6 @@
 <mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="com.create.empEmp_creation.controller.Oapp"
 	xmlns:custom="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" xmlns:html="http://www.w3.org/1999/xhtml">
-	<SplitApp id="split" initialDetail="detail" initialMaster="master2">
+	<SplitApp id="split" initialDetail="detail" initialMaster="master2" backgroundColor="White">
 		<detailPages>
 			<Page id="detail" title="Dashboard" class="sapUiStdPage">
 				<content>
