@@ -10,7 +10,7 @@
 				</content>
 			</Page>
 			<Page id="detailDetail" title="DetailDetail" class="sapUiStdPage" showNavButton="false" navButtonText="Back"
-				navButtonPress="onPressDetailBack" >
+				navButtonPress="onPressDetailBack">
 				<content>
 					<Table id="idAdmin" inset="false" items="{ path: '/Role', sorter: { path: 'UserRole', descending: true } }" mode="MultiSelect" width="auto"
 						class="sapUiResponsiveMargin">
@@ -116,7 +116,7 @@
 			</Page>-->
 			<Page id="master2" showHeader="true" title="Master" class="sapUiStdPage" showNavButton="false" navButtonPress="onPressMasterBack">
 				<content>
-							<Tree id="Tree" items="{path: '/'}" itemPress="onListItemPress" mode="SingleSelectMaster" >
+					<Tree id="Tree" items="{path: '/'}" itemPress="onListItemPress" mode="SingleSelectMaster">
 						<StandardTreeItem title="{text}" icon="{ref}" iconDensityAware="false" type="Active" custom:to="{custom}" selected="true"/>
 					</Tree>
 				</content>
