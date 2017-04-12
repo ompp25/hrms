@@ -103,15 +103,6 @@
 			</Page>
 		</detailPages>
 		<masterPages>
-			<!--<Page id="master" title="Master 1" icon="sap-icon://action" class="sapUiStdPage">
-				<content>
-					<List>
-						<items>
-							<StandardListItem title="To Master2" type="Navigation" press="onPressGoToMaster"/>
-						</items>
-					</List>
-				</content>
-			</Page>-->
 			<Page id="master2" showHeader="true" title="Master" class="sapUiStdPage" showNavButton="false" navButtonPress="onPressMasterBack">
 				<content>
 					<Tree id="Tree" items="{path: '/'}" selectionChange="onListItemPress" mode="SingleSelectMaster" includeItemInSelection="true">
