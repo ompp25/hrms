@@ -43,7 +43,8 @@
 		[
 			{
 				"text": "General Information",
-				"ref": "sap-icon://message-information"
+				"ref": "sap-icon://message-information",
+				"custom": "generalinformation"
 			},
 			{
 				"text": "Location",

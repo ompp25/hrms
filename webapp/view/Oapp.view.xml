@@ -1,12 +1,10 @@
 <mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="com.create.empEmp_creation.controller.Oapp"
 	xmlns:custom="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" xmlns:html="http://www.w3.org/1999/xhtml">
-	<SplitApp id="split" initialDetail="detail" initialMaster="master2" backgroundColor="White">
+	<SplitApp id="split" initialDetail="detailDetail" initialMaster="master2" backgroundColor="White">
 		<detailPages>
-			<Page id="detail" title="Dashboard" class="sapUiStdPage">
+			<Page id="generalinformation" title="Dashboard" class="sapUiStdPage">
 				<content>
-					<Panel width="auto" class="pnl sapUiResponsiveMargin">
-						<Text text="Please note that this demo does not include our performance module. This will be available soon."/>
-					</Panel>
+					<mvc:XMLView viewName="com.create.empEmp_creation.view.admin.General_Information" />
 				</content>
 			</Page>
 			<Page id="detailDetail" title="DetailDetail" class="sapUiStdPage" showNavButton="false" navButtonText="Back"
