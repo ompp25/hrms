@@ -9,8 +9,8 @@
 					</Panel>
 				</content>
 			</Page>
-			<Page id="detailDetail" title="Detail Detail" class="sapUiStdPage" showNavButton="true" navButtonText="Back"
-				navButtonPress="onPressDetailBack">
+			<Page id="detailDetail" title="DetailDetail" class="sapUiStdPage" showNavButton="false" navButtonText="Back"
+				navButtonPress="onPressDetailBack" >
 				<content>
 					<Table id="idAdmin" inset="false" items="{ path: '/Role', sorter: { path: 'UserRole', descending: true } }" mode="MultiSelect" width="auto"
 						class="sapUiResponsiveMargin">
@@ -44,7 +44,7 @@
 					</Table>
 				</content>
 			</Page>
-			<Page id="detail2" title="Detail 3 Page" class="sapUiStdPage" showNavButton="true" navButtonText="Back" navButtonPress="onPressDetailBack">
+			<Page id="detail2" title="Detail3 Page" class="sapUiStdPage" showNavButton="false" navButtonText="Back" navButtonPress="onPressDetailBack">
 				<content>
 					<Label text="This is Detail Page3"/>
 					<Input/>
@@ -58,7 +58,7 @@
 					<Input/>
 				</content>
 			</Page>
-			<Page id="detail3" title="Detail 3 Page" class="sapUiStdPage" showNavButton="true" navButtonText="Back" navButtonPress="onPressDetailBack">
+			<Page id="detail3" title="Detail3Page" class="sapUiStdPage" showNavButton="false" navButtonText="Back" navButtonPress="onPressDetailBack">
 				<content>
 					<Table id="idProductsTable" inset="false" items="{ path: '/LineItems', sorter: { path: 'Name' } }" mode="MultiSelect" width="auto"
 						class="sapUiResponsiveMargin">
