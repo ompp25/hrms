@@ -337,3 +337,7 @@ span.sapMBtnInner.sapMBtnEmphasized {
 .sapMLIBHoverable.sapMLIBSelected:hover {
     background: #3dbf1e;
 }
+
+.sapMLIB.sapMLIBSelected {
+    background: #20a744;
+}
