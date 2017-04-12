@@ -328,3 +328,12 @@ span.sapMBtnInner.sapMBtnEmphasized {
     color: #ffffff;
    
 }
+/* Child of tree */
+.sapMTreeItemBase.sapMTreeItemBaseChildren {
+    background-color: #85d6de;
+    border-bottom-color: transparent;
+}
+/* Selection of tree */
+.sapMLIBHoverable.sapMLIBSelected:hover {
+    background: #3dbf1e;
+}
