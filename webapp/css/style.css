@@ -367,10 +367,10 @@ span.sapMBtnInner.sapMBtnEmphasized {
 	font-size:12px;
 }
 
-sapUiResponsiveMargin{
-	padding-top:5px;
-	padding-bottom:5px;
-}
+/*sapUiResponsiveMargin{*/
+/*	padding-top:5px;*/
+/*	padding-bottom:5px;*/
+/*}*/
 
 .btn1{
 	padding-left:120px;
@@ -402,11 +402,11 @@ span.sapMBtnInner.sapMBtnAccept{
 }
 
 
-.sapUiResponsiveMargin{
-	border: solid 1px;
-	border-radius: 5px;
-	border-color: grey;
-}
+/*.sapUiResponsiveMargin{*/
+/*	border: solid 1px;*/
+/*	border-radius: 5px;*/
+/*	border-color: grey;*/
+/*}*/
 
 .vb2{
 	padding-left:15%;
