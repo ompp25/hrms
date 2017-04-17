@@ -42,18 +42,9 @@
 					</Table>
 				</content>
 			</Page>
-			<Page id="detail2" title="Detail3 Page" class="sapUiStdPage" showNavButton="false" navButtonText="Back" navButtonPress="onPressDetailBack">
+			<Page id="workshift" title="Detail3 Page" class="sapUiStdPage" showNavButton="false" navButtonText="Back" navButtonPress="onPressDetailBack">
 				<content>
-					<Label text="This is Detail Page3"/>
-					<Input/>
-					<Label text="Label 2"/>
-					<Input/>
-					<Label text="Label 3"/>
-					<Input/>
-					<Label text="Label 4"/>
-					<Input/>
-					<Label text="Label 5"/>
-					<Input/>
+					<mvc:XMLView viewName="com.create.empEmp_creation.view.admin.Work_Shift" />
 				</content>
 			</Page>
 			<Page id="detail3" title="Detail3Page" class="sapUiStdPage" showNavButton="false" navButtonText="Back" navButtonPress="onPressDetailBack">

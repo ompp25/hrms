@@ -33,6 +33,11 @@
 			{
 				"text": "Job Categories",
 				"ref": "sap-icon://group"
+			},
+			{
+				"text": "Work Shift",
+				"ref": "sap-icon://group",
+				"custom": "workshift"
 			}
 		]
 	},

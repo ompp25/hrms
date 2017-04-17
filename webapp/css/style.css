@@ -328,6 +328,16 @@ span.sapMBtnInner.sapMBtnEmphasized {
     color: #ffffff;
    
 }
+
+/******************************/
+
+
+/* For OApp view*/
+
+
+/******************************/
+
+
 /* Child of tree */
 .sapMTreeItemBase.sapMTreeItemBaseChildren {
     background-color: #85d6de;
@@ -340,4 +350,137 @@ span.sapMBtnInner.sapMBtnEmphasized {
 
 .sapMLIB.sapMLIBSelected {
     background: #20a744;
+}
+
+
+/******************************/
+
+
+/* General Information*/
+
+
+/******************************/
+
+
+
+.labl{
+	font-size:12px;
+}
+
+sapUiResponsiveMargin{
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+.btn1{
+	padding-left:120px;
+}
+
+.sel{
+	background:#E0E0E0;
+	border-radius:5px;
+	height:2rem;
+}
+
+.itm{
+	padding-top:2px;
+}
+
+.vbx{
+	height:100%;
+}
+
+.textbox .sapMInputBaseInner{
+	background:#E0E0E0;
+	border-radius:5px;
+	height:1.5rem;
+}
+
+span.sapMBtnInner.sapMBtnAccept{
+	background-color:#317c31;
+	color:#fafafa;
+}
+
+
+.sapUiResponsiveMargin{
+	border: solid 1px;
+	border-radius: 5px;
+	border-color: grey;
+}
+
+.vb2{
+	padding-left:15%;
+}
+
+.vb22{
+	padding-left:4.5%;
+}
+
+.sapUiTinyMargin{
+	padding-top:1%;
+	padding-bottom:3%;
+}
+
+
+
+
+/******************************/
+
+
+/* WorkShift*/
+
+
+/******************************/
+
+
+
+.input.sapMInputBaseInner {
+    /*box-sizing: border-box;*/
+    border-radius: 5px;
+}
+
+.lbl.sapMLabel {
+    position: relative;
+    left: -241%;
+}
+.cb1.sapMComboBoxTextField {
+    
+    position: relative;
+    left: -50%;
+}
+.input.sapMInputBase {
+    
+    position: relative;
+    left: -108%;
+}
+.pnl.sapMPanel{
+    border: 1PX SOLID;
+    border-color: lightgrey;
+}
+
+.lbl1.sapMLabel{
+position: relative;
+    left: 135%;
+}
+.myGreenButton .sapMBtnInner {
+  background-color: green;
+  color: white;
+}
+.myRedButton .sapMBtnInner {
+  background-color: red;
+  color: white;
+}
+.sapMBtn:hover>.sapMBtnHoverable {
+    background-image: none;
+    background-color: #873c9a;
+    border-color: #f1f1f1;
+}
+.sapMListTbl {
+    font-size: 0.875rem;
+    border: 1px solid lightgrey;
+}
+
+.sapMListTbl th {
+    background: #d48711;
+    border-bottom: 1px solid #fff;
 }

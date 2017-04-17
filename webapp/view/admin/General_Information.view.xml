@@ -1,136 +1,81 @@
 <mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
 	controllerName="com.create.empEmp_creation.controller.General_Information" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form">
 	<App>
-			<pages>
-			<Page title="{i18n>title}" showHeader="false">
-				<VBox class="vbx">
-				<Panel class="sapMPanel">
+		<pages>
+			<Page title="{i18n>title}">
+				<Panel  width="auto" class="sapUiResponsiveMargin">
 					<headerToolbar>
 						<Toolbar>
 							<Title text="General Information"  />
 						</Toolbar>
 					</headerToolbar>
 			
-				
 	    				<content>
-	    				
-	    					<f:SimpleForm id="SimpleFormChange480_12120"
-							editable="true"
-							layout="ResponsiveGridLayout"
-							labelSpanL="4"
-							labelSpanM="12"
-							adjustLabelSpan="false"
-							emptySpanL="0"
-							emptySpanM="0"
-							columnsL="2"
-							columnsM="2">
-							<f:content>
-								
+					
 	    					<l:VerticalLayout id="containerLayout" width="100%" >
-							<l:BlockLayout id="BlockLayout" background="{/selectedBackground}">
-	    					<l:BlockLayoutRow>
-								<l:BlockLayoutCell>
+									<HBox>
+									<VBox>	
 									<HBox>
 									<Label text="Organization Name" width="200px" required="true" />
-									<Input value=""  />
+									<Input value="" class="textbox" />
 									</HBox>
 									<HBox>
 									<Label text="Number of Employees" width="200px"/>
 									<Text text="1"/>
 									</HBox>
-								</l:BlockLayoutCell>
-								<l:BlockLayoutCell>
-									<HBox>
+									</VBox>
+									<VBox class="vb2">
+									<HBox>									
 									<Label text="Tax ID" width="200px" />
-									<Input value="" />
+									<Input value="" class="textbox" />
 									</HBox>
 									<HBox>
 									<Label text="Registration Number" width="200px"/>
-									<Input value="" />
+									<Input value="" class="textbox" />
 									</HBox>
-								</l:BlockLayoutCell>
-							</l:BlockLayoutRow>
-							</l:BlockLayout>
+									</VBox>
+									</HBox>
 							</l:VerticalLayout>
-							</f:content>
-							</f:SimpleForm>
-						
-	    				</content>
-					</Panel>
-					
-					
-					<Panel>
-	    				<content>
+							
+							<Toolbar class="sapUiTinyMargin"></Toolbar>
 	    				
-	    					<f:SimpleForm id="SimpleFormChange480_121201"
-							editable="true"
-							layout="ResponsiveGridLayout"
-							labelSpanL="4"
-							labelSpanM="12"
-							adjustLabelSpan="false"
-							emptySpanL="0"
-							emptySpanM="0"
-							columnsL="2"
-							columnsM="2">
-							<f:content>
 	    					<l:VerticalLayout id="containerLayout1" width="100%" >
-							<l:BlockLayout id="BlockLayout1" background="{/selectedBackground}">
-	    					<l:BlockLayoutRow>
-								<l:BlockLayoutCell>
+								<HBox>	
+								<VBox>
 									<HBox>
 									<Label text="Phone" width="200px"/>
-									<Input value="" type="Tel"/>
+									<Input value="" type="Tel" class="textbox"/>
 									</HBox>
 									<HBox>
 									<Label text="Email" width="200px"/>
-									<Input value="" type="Email"/>
+									<Input value="" type="Email" class="textbox"/>
 									</HBox>
-								</l:BlockLayoutCell>
-								<l:BlockLayoutCell>
+								</VBox>
+								<VBox class="vb2">
 									<HBox>
 									<Label text="Fax" width="200px" />
-									<Input value="" type="Tel"/>
+									<Input value="" type="Tel" class="textbox"/>
 									</HBox>
-								</l:BlockLayoutCell>
-							</l:BlockLayoutRow>
-							</l:BlockLayout>
+								</VBox>
+								</HBox>
 							</l:VerticalLayout>
-							</f:content>
-							</f:SimpleForm>
 							
-	    				</content>
-					</Panel>
-					
-					
-					<Panel>
-	    				<content>
-	    				
-	    					<f:SimpleForm id="SimpleFormChange480_121202"
-							editable="true"
-							layout="ResponsiveGridLayout"
-							labelSpanL="4"
-							labelSpanM="12"
-							adjustLabelSpan="false"
-							emptySpanL="0"
-							emptySpanM="0"
-							columnsL="2"
-							columnsM="2">
-							<f:content>
+								<Toolbar class="sapUiTinyMargin"></Toolbar>
+							
 	    					<l:VerticalLayout id="containerLayout2" width="100%" >
-							<l:BlockLayout id="BlockLayout2" background="{/selectedBackground}">
-	    					<l:BlockLayoutRow>
-								<l:BlockLayoutCell>
+								<HBox>
+									<VBox>
 									<HBox>
 									<Label text="Address Street 1" width="200px"/>
-									<Input value=""/>
+									<Input value="" class="textbox"/>
 									</HBox>
 									<HBox>
 									<Label text="City" width="200px"/>
-									<Input value="" />
+									<Input value="" class="textbox" />
 									</HBox>
 									<HBox>
 									<Label text="Zip/Postal Code" width="200px"/>
-									<Input value=""/>
+									<Input value="" class="textbox"/>
 									</HBox>
 									<HBox>
 									<Label text="Note" width="200px"/>
@@ -140,15 +85,16 @@
 										<Label text="Required field" width="200px" textAlign="Left" required="true" class="labl"/>
 										<Text></Text>
 									</HBox>
-								</l:BlockLayoutCell>
-								<l:BlockLayoutCell>
+									</VBox>
+								
+									<VBox class="vb22">
 									<HBox>
 									<Label text="Address Street 2" width="200px" />
-									<Input value="" type="Tel"/>
+									<Input value="" type="Tel" class="textbox"/>
 									</HBox>
 									<HBox>
 									<Label text="State/Province" width="200px"/>
-									<Input value="" />
+									<Input value="" class="textbox" />
 									</HBox>
 									<HBox>
 									<Label text="Country" width="200px"/>
@@ -161,20 +107,19 @@
 										</items>
 									</Select>
 									</HBox>
-								</l:BlockLayoutCell>
-							</l:BlockLayoutRow>
-							</l:BlockLayout>
+								</VBox>
+								</HBox>
+								<Toolbar class="sapUiTinyMargin"></Toolbar>
+								<HBox>
+									<Button type="Accept" text="Edit"  width="100px"></Button>
+								</HBox>
 							</l:VerticalLayout>
-							</f:content>
-							</f:SimpleForm>
 						
 	    				</content>
 					</Panel>
-					<HBox>
-								<Button type="Accept" text="Edit" class="btn1" width="200px"></Button>
-					</HBox>
+					
 
-			</VBox>
+			
 			</Page>
 		</pages>
 	</App>
