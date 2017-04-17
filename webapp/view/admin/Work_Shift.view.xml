@@ -2,7 +2,7 @@
 	controllerName="com.create.empEmp_creation.controller.Work_Shift" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:l="sap.ui.layout">
 	<App>
 	<pages>
-			<Page title="Page View">
+			<Page title="Page View" showHeader="false">
 				<Panel class="pnl sapUiResponsiveMargin" width="auto">
 					<headerToolbar>
 						<Toolbar>

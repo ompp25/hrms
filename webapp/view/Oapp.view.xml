@@ -42,7 +42,7 @@
 					</Table>
 				</content>
 			</Page>
-			<Page id="workshift" title="Detail3 Page" class="sapUiStdPage" showNavButton="false" navButtonText="Back" navButtonPress="onPressDetailBack">
+			<Page id="workshift" title="Detail3 Page" class="sapMPage" showNavButton="false" navButtonText="Back" navButtonPress="onPressDetailBack" enableScrolling="true">
 				<content>
 					<mvc:XMLView viewName="com.create.empEmp_creation.view.admin.Work_Shift" />
 				</content>
