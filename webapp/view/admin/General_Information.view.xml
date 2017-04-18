@@ -2,7 +2,7 @@
 	controllerName="com.create.empEmp_creation.controller.General_Information" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form">
 	<App>
 		<pages>
-			<Page title="{i18n>title}">
+			<Page title="{i18n>title}" showHeader="false">
 				<Panel  width="auto" class="sapUiResponsiveMargin">
 					<headerToolbar>
 						<Toolbar>
