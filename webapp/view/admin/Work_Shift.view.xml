@@ -55,14 +55,19 @@
 				</Panel>
 			
 				<Panel class="pnl sapUiResponsiveMargin"  width="auto">
+					<headerToolbar>
+						<Toolbar>
+							<Title text="Work Shifts"/>
+						</Toolbar>
+					</headerToolbar>
 					<content>
 						<Table id="idTable" inset="false" items="{ path: 'combo>/TableCollection3'}" mode="MultiSelect" class="myTable">
-							<headerToolbar>
+							<!--<headerToolbar>
 								<Toolbar>
 									<Title text="Work Shifts" level="H2"/>
 								
 								</Toolbar>
-							</headerToolbar>
+							</headerToolbar>-->
 							<columns>
 								<Column width="12em">
 									<Text text="ShiftName"/>
