@@ -7,10 +7,10 @@
 					<mvc:XMLView viewName="com.create.empEmp_creation.view.admin.General_Information" />
 				</content>
 			</Page>
-			<Page id="detailDetail" title="DetailDetail" class="sapUiStdPage" showNavButton="false" navButtonText="Back"
+			<Page id="detailDetail" title="Users" class="sapUiStdPage" showNavButton="false" navButtonText="Back"
 				navButtonPress="onPressDetailBack">
 				<content>
-					<mvc:XMLView viewName="com.create.empEmp_creation.view.admin.General_Information" />
+					<mvc:XMLView viewName="com.create.empEmp_creation.view.admin.Users" />
 				</content>
 			</Page>
 			<Page id="workshift" title="Detail3 Page" class="sapMPage" showNavButton="false" navButtonText="Back" navButtonPress="onPressDetailBack" enableScrolling="true">

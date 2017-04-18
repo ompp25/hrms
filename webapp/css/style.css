@@ -484,3 +484,53 @@ position: relative;
     background: #d48711;
     border-bottom: 1px solid #fff;
 }
+
+/* user view */
+
+.b1 {
+    height: 6rem;
+    margin: 0;
+    padding: 3rem 6px;
+   
+  
+}
+.b2 {
+    height: 6rem;
+    margin: 0;
+    padding: 3rem 6px;
+   
+}
+.b1 .sapMBtnInner {
+  background-color: green;
+  color:white;
+}
+.b2 .sapMBtnInner {
+  background-color: grey;
+  color:white;
+}
+.b3 {
+    height: 6rem;
+    margin: 0;
+    padding: 3rem 6px;
+  padding-bottom: 6rem ;
+}
+.b4 {
+    height: 6rem;
+    margin: 0;
+    padding: 3rem 6px ;
+   padding-bottom: 6rem;
+}
+.b3 .sapMBtnInner {
+  background-color: green;
+  color:white;
+}
+.b4 .sapMBtnInner {
+  background-color: red;
+  color:white;
+}
+.myPanel1.sapMPanel {
+	border: 1px solid lightgrey;
+}
+.myPanel2.sapMPanel {
+	border: 1px solid grey;
+}

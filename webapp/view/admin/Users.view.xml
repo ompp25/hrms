@@ -1,10 +1,80 @@
-<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="com.create.empEmp_creation.controller.Users"
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:l="sap.ui.layout" controllerName="com.create.empEmp_creation.controller.Users"
 	xmlns:html="http://www.w3.org/1999/xhtml">
 	<App>
 		<pages>
-			<Page title="Title">
+			<Page title="Title" showHeader="false">
 				<content>
-					
+						<Panel width="auto" class="myPanel1 sapUiResponsiveMargin">
+					<headerToolbar>
+						<Toolbar>
+							<Title text="System Users"/>
+						</Toolbar>
+					</headerToolbar>
+					<content>
+						<l:HorizontalLayout>
+							<VBox>
+								<Label text="Username"/>
+								<Input value="" id="id1" width="250px" class="sapUiLargeMarginEnd"/>
+							</VBox>
+							<VBox>
+								<Label text="User Role"/>
+								<ComboBox id="id2" items="{ path: '/TableCollection1', sorter: { path: '/Name' } }" class="sapUiLargeMarginEnd">
+									<core:Item key="{Id}" text="{Name}"/>
+								</ComboBox>
+							</VBox>
+							<VBox>
+								<Label text="Employee Name"/>
+								<Input value="" id="id3" width="250px" placeholder="Type for Hints" class="sapUiLargeMarginEnd"/>
+							</VBox>
+							<VBox>
+								<Label text="Status"/>
+								<ComboBox id="id4" items="{ path: '/TableCollection2', sorter: { path: '/Name' } }" class="sapUiLargeMarginEnd">
+									<core:Item key="{Id}" text="{Name}"/>
+								</ComboBox>
+							</VBox>
+						</l:HorizontalLayout>
+						<HBox>
+							<Button  text="Search" press="onOpenDialog" class="b1"/>
+							<Button  text="Reset" press="onReset" class="b2"/>
+						</HBox>
+					</content>
+				</Panel>
+				<Panel width="auto" class="myPanel1 sapUiResponsiveMargin">
+					<content>
+						<Table id="idTable" inset="false" items="{ path: '/TableCollection3'}" mode="MultiSelect">
+							<headerToolbar>
+								<Toolbar>
+									<Button text="Add" press="onAdd" class="b3"/>
+									<Button text="Delete" press="onDelete" class="b4"/>
+								</Toolbar>
+							</headerToolbar>
+							<columns>
+								<Column width="12em">
+									<Text text="Username"/>
+								</Column>
+								<Column width="12em">
+									<Text text="User Role"/>
+								</Column>
+								<Column width="12em">
+									<Text text="Employee Name"/>
+								</Column>
+								<Column width="12em">
+									<Text text="Status"/>
+								</Column>
+							</columns>
+							<items>
+								<ColumnListItem>
+									<cells>
+										<Text text="{Username}"/>
+										<Text text="{UserRole}"/>
+										<Text text="{EmployeeName}"/>
+										<Text text="{Status}"/>
+									</cells>
+								</ColumnListItem>
+							</items>
+						</Table>
+					</content>
+				</Panel>
 				</content>
 			</Page>
 		</pages>
