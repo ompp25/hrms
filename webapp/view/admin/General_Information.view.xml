@@ -12,7 +12,7 @@
 			
 	    				<content>
 					
-	    					<l:VerticalLayout id="containerLayout" width="100%" >
+	    					<l:VerticalLayout id="containerLayout" width="100%">
 									<HBox>
 									<VBox>	
 									<HBox>
