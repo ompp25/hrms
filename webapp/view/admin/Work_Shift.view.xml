@@ -1,7 +1,7 @@
 <mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
 	controllerName="com.create.empEmp_creation.controller.Work_Shift" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:l="sap.ui.layout">
 	<App>
-	<pages>
+		<pages>
 			<Page title="Page View" showHeader="false">
 				<Panel class="pnl sapUiResponsiveMargin" width="auto">
 					<headerToolbar>
@@ -11,7 +11,6 @@
 					</headerToolbar>
 					<content>
 						<l:VerticalLayout>
-							
 							<HBox>
 								<Label text="Shift Name *" class="sapUiResponsiveMargin"/>
 								<Input value="" id="id1" width="158%" class="sapUiSmallMarginEnd"/>
@@ -43,18 +42,14 @@
 									</HBox>
 								</l:content>
 							</l:VerticalLayout>
-						
 							<HBox class="sapUiResponsiveMargin">
-							 
 								<Button text="Save" class="myGreenButton sapUiTinyMargin"/>
-								<Button text="Cancel"  class="myRedButton sapUiTinyMargin"/>
-							
+								<Button text="Cancel" class="myRedButton sapUiTinyMargin"/>
 							</HBox>
 						</l:VerticalLayout>
 					</content>
 				</Panel>
-			
-				<Panel class="pnl sapUiResponsiveMargin"  width="auto">
+				<Panel class="pnl sapUiResponsiveMargin" width="auto">
 					<headerToolbar>
 						<Toolbar>
 							<Title text="Work Shifts"/>
