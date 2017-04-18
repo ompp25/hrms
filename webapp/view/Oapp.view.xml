@@ -10,36 +10,7 @@
 			<Page id="detailDetail" title="DetailDetail" class="sapUiStdPage" showNavButton="false" navButtonText="Back"
 				navButtonPress="onPressDetailBack">
 				<content>
-					<Table id="idAdmin" inset="false" items="{ path: '/Role', sorter: { path: 'UserRole', descending: true } }" mode="MultiSelect" width="auto"
-						class="sapUiResponsiveMargin">
-						<columns>
-							<Column width="12em">
-								<Toolbar design="Transparent">
-									<Text text="User Role"/>
-									<Button icon="sap-icon://sort" press="onSort" ariaLabelledBy="sortButtonLabel"/>
-								</Toolbar>
-							</Column>
-							<Column minScreenWidth="Tablet" demandPopin="true">
-								<Text text="User Role Type"/>
-							</Column>
-							<Column hAlign="Right">
-								<Text text=""/>
-							</Column>
-						</columns>
-						<items>
-							<ColumnListItem>
-								<cells>
-									<Text text="{UserRole}"/>
-									<Text text="{UserRoleType}"/>
-									<Toolbar>
-										<ToolbarSpacer/>
-										<ToolbarSpacer/>
-										<Button icon="sap-icon://edit" press="onFragPress" class="customButtonIcon"/>
-									</Toolbar>
-								</cells>
-							</ColumnListItem>
-						</items>
-					</Table>
+					<mvc:XMLView viewName="com.create.empEmp_creation.view.admin.General_Information" />
 				</content>
 			</Page>
 			<Page id="workshift" title="Detail3 Page" class="sapMPage" showNavButton="false" navButtonText="Back" navButtonPress="onPressDetailBack" enableScrolling="true">
