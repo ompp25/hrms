@@ -18,6 +18,11 @@
 					<mvc:XMLView viewName="com.create.empEmp_creation.view.admin.Work_Shift" />
 				</content>
 			</Page>
+			<Page id="jobcategory" title="Detail3 Page" class="sapMPage" showNavButton="false" navButtonText="Back" navButtonPress="onPressDetailBack" enableScrolling="true">
+				<content>
+					<mvc:XMLView viewName="com.create.empEmp_creation.view.admin.JobCategory" />
+				</content>
+			</Page>
 			<Page id="detail3" title="Detail3Page" class="sapUiStdPage" showNavButton="false" navButtonText="Back" navButtonPress="onPressDetailBack">
 				<content>
 					<Table id="idProductsTable" inset="false" items="{ path: '/LineItems', sorter: { path: 'Name' } }" mode="MultiSelect" width="auto"

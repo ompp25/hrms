@@ -32,7 +32,8 @@
 			},
 			{
 				"text": "Job Categories",
-				"ref": "sap-icon://group"
+				"ref": "sap-icon://group",
+				"custom": "jobcategory"
 			},
 			{
 				"text": "Work Shift",

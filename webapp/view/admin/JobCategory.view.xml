@@ -1,0 +1,42 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:l="sap.ui.layout"
+	xmlns:html="http://www.w3.org/1999/xhtml" controllerName="com.create.empEmp_creation.controller.JobCategory">
+	<App>
+		<pages>
+			<Page title="Title" showHeader="false">
+				<content>
+					<Panel width="auto" class="myPanel1 sapUiResponsiveMargin">
+						<headerToolbar>
+							<Toolbar>
+								<Title text="Add Job Category"/>
+							</Toolbar>
+						</headerToolbar>
+						<content>
+							<VBox>
+							<HBox>
+					             <Label text="Name*" class="sapUiMediumMargin"/>
+					           	<Input value="" class="sapUiResponsiveMargin"/>
+					         </HBox>
+					         <HBox>
+					         	<Button text="Save" class="b1"/>
+					         	<Button text="Cancel" class="b2"/>
+					         	</HBox>
+					         </VBox>
+						</content>
+					</Panel>
+					<Panel width="auto" class="myPanel1 sapUiResponsiveMargin">
+						<headerToolbar>
+							<Toolbar>
+								<Title text="Job Categories"/>
+							</Toolbar>
+						</headerToolbar>
+						<content>
+							<List headerText="Job Category" items="{ path: 'modelProdMain>/ohrm_job_category' }" mode="MultiSelect">
+								<StandardListItem title="{modelProdMain>name}"/>
+							</List>
+						</content>
+					</Panel>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
