@@ -534,3 +534,9 @@ position: relative;
 .myPanel2.sapMPanel {
 	border: 1px solid grey;
 }
+
+/* job categories*/
+.list.sapMList {
+  
+    border: 1px solid lightgrey;
+}

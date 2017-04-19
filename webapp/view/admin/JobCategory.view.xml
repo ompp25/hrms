@@ -30,7 +30,7 @@
 							</Toolbar>
 						</headerToolbar>
 						<content>
-							<List headerText="Job Category" items="{ path: 'modelProdMain>/ohrm_job_category' }" mode="MultiSelect">
+							<List headerText="Job Category" items="{ path: 'modelProdMain>/ohrm_job_category' }" mode="MultiSelect" class="list">
 								<StandardListItem title="{modelProdMain>name}"/>
 							</List>
 						</content>
