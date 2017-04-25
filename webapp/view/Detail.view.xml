@@ -6,8 +6,6 @@
 		</semantic:content>
 	</semantic:DetailPage>
 	<semantic:DetailPage title="Detail1" id="Detail1">
-		<semantic:content>
-			
-		</semantic:content>
+	
 	</semantic:DetailPage>
 </mvc:View>
