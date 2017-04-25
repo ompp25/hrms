@@ -25,7 +25,9 @@
 								<GenericTile backgroundImage="images/DibyaSir.jpg" frameType="TwoByOne"
 									press="pressOnTileOne">
 									<tileContent>
-										<TileContent footer="August 21, 2016">
+										<TileContent footer="{
+				path: '/dtValue',
+				type: 'sap.ui.model.type.DateTime'}">
 											<content>
 												<NewsContent contentText="Admin Portal" subheader="Click here for Admin Portal" press="onPressAdmin"></NewsContent>
 											</content>
@@ -34,7 +36,9 @@
 								</GenericTile>
 								<GenericTile backgroundImage="http://www.exactlly.com/blog/wp-content/uploads/HRMS-professional-organisation-300x250.jpg" frameType="TwoByOne">
 									<tileContent>
-										<TileContent footer="August 21, 2016">
+										<TileContent footer="{
+				path: '/dtValue',
+				type: 'sap.ui.model.type.DateTime'}">
 											<content>
 												<NewsContent contentText="Admin Portal" subheader="Click here for Admin Portal" press="onPressAdmin"></NewsContent>
 											</content>
@@ -117,7 +121,9 @@
 								<GenericTile backgroundImage="https://tax.thomsonreuters.com/wp-content/images/cs-professional-suite/graphics/live-payroll-feature.jpg" frameType="TwoByOne"
 									press="pressOnTileOne">
 									<tileContent>
-										<TileContent footer="August 21, 2016">
+										<TileContent footer="{
+				path: '/dtValue',
+				type: 'sap.ui.model.type.DateTime'}">
 											<content>
 												<NewsContent contentText="Payroll Portal" subheader="Click here to go inside Payroll Portal"></NewsContent>
 											</content>
@@ -126,7 +132,9 @@
 								</GenericTile>
 								<GenericTile backgroundImage="https://www.ecasd.us/ECASD/media/District-Site/Payroll%20documents/pay-roll.png" frameType="TwoByOne" state="active">
 									<tileContent>
-										<TileContent footer="August 21, 2016">
+										<TileContent footer="{
+				path: '/dtValue',
+				type: 'sap.ui.model.type.DateTime'}">
 											<content>
 												<NewsContent contentText="Payroll Portal" subheader="Click here to go inside Payroll Portal"></NewsContent>
 											</content>

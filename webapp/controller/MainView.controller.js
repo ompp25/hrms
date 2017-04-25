@@ -1,16 +1,19 @@
 sap.ui.define([
-	"sap/ui/core/mvc/Controller"
-], function(Controller) {
+	"sap/ui/core/mvc/Controller",
+	"sap/ui/model/json/JSONModel"
+], function(Controller,JSONModel) {
 	"use strict";
 
 	return Controller.extend("com.create.empEmp_creation.controller.MainView", {
 
-		/**
-		 * Called when a controller is instantiated and its View controls (if available) are already created.
-		 * Can be used to modify the View before it is displayed, to bind event handlers and do other one-time initialization.
-		 * @memberOf com.create.empEmp_creation.view.MainView
-		 */
+	       _data : {
+			"dtValue" : new Date()
+//			"dtValue" : "08:15:32"
+		},
 			onInit: function() {
+			var oModel = new JSONModel(this._data);
+			this.getView().setModel(oModel);	
+		   
 			var uname= window.sessionStorage.getItem('uname');
 			this.getView().byId("bt3").setText("Welcome Mr."+uname);
 			},
