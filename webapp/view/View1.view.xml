@@ -5,19 +5,23 @@
 			<Page title="{i18n>title}" showHeader="false">
 				<subHeader>
 					<Bar id="bb" design="Auto">
-					<contentLeft>
-						<core:Icon id="ic" src="sap-icon://sap-logo-shape" size="48px" height="48px" width="129.21875px" visible="true"/>
-					</contentLeft>
-					<contentMiddle>
-						<Label id="lbm" text="Human Resource Department" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
-					</contentMiddle>
-					<contentRight>
-						<Button id="bt1" iconDensityAware="false" text="" type="Default" icon="sap-icon://sap-ui5" iconFirst="true" width="auto" enabled="true" visible="true"/>
-						<Button id="bt2" iconDensityAware="false" text="" type="Default" icon="sap-icon://sys-help" iconFirst="true" width="auto" enabled="true" visible="true"/>
-						<Button id="bt3" iconDensityAware="false" text="{TempModel>/Id}" type="Default" icon="sap-icon://account" iconFirst="true" width="auto" enabled="true" visible="true" press="handlePopoverPress"/>
-						<Button id="bt4" iconDensityAware="false" text="" type="Default" icon="" iconFirst="true" width="auto" enabled="true" visible="false" press="handlePopoverPress1"/>
-					</contentRight>
-				</Bar>
+						<contentLeft>
+							<core:Icon id="ic" src="sap-icon://sap-logo-shape" size="48px" height="48px" width="129.21875px" visible="true"/>
+						</contentLeft>
+						<contentMiddle>
+							<Label id="lbm" text="Human Resource Department" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+						</contentMiddle>
+						<contentRight>
+							<Button id="bt1" iconDensityAware="false" text="" type="Default" icon="sap-icon://sap-ui5" iconFirst="true" width="auto" enabled="true"
+								visible="true"/>
+							<Button id="bt2" iconDensityAware="false" text="" type="Default" icon="sap-icon://sys-help" iconFirst="true" width="auto" enabled="true"
+								visible="true"/>
+							<Button id="bt3" iconDensityAware="false" text="{TempModel>/Id}" type="Default" icon="sap-icon://account" iconFirst="true" width="auto"
+								enabled="true" visible="true" press="handlePopoverPress"/>
+							<Button id="bt4" iconDensityAware="false" text="" type="Default" icon="" iconFirst="true" width="auto" enabled="true" visible="false"
+								press="handlePopoverPress1"/>
+						</contentRight>
+					</Bar>
 				</subHeader>
 				<content>
 					<Text text="{TempModel>/Id}"/>
@@ -69,7 +73,8 @@
 							</f:content>
 						</f:SimpleForm>
 					</VBox>
-					<Button type="Accept" text="Save" press="onCreate" ariaDescribedBy="acceptButtonDescription genericButtonDescription"/></content>
+					<Button type="Accept" text="Save" press="onCreate" ariaDescribedBy="acceptButtonDescription genericButtonDescription"/>
+				</content>
 			</Page>
 		</pages>
 	</App>
