@@ -1,0 +1,44 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:l="sap.ui.layout"
+	controllerName="com.create.empEmp_creation.controller.JobTitles" xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="Title" showHeader="false">
+				<content>
+					<Panel width="auto" class="myPanel1 sapUiSmallMargin">
+						<headerToolbar>
+							<Toolbar>
+								<Title text="Job Titles"/>
+							</Toolbar>
+						</headerToolbar>
+						<content>
+							<HBox>
+								<Button text="Add" press="onAddJobTitle" class="b1"/>
+								<Button text="Delete" press="onDeleteJobTitle" class="b2"/>
+							</HBox>
+							<HBox>
+								<Table id="idTable" inset="false" items="{ path: '/TableCollection3'}" mode="MultiSelect">
+									<columns>
+										<Column width="12em">
+											<Text text="Job Title"/>
+										</Column>
+										<Column width="12em">
+											<Text text="Job Description"/>
+										</Column>
+									</columns>
+									<items>
+										<ColumnListItem>
+											<cells>
+												<Text text="{Username}"/>
+												<Text text="{UserRole}"/>
+											</cells>
+										</ColumnListItem>
+									</items>
+								</Table>
+							</HBox>
+						</content>
+					</Panel>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

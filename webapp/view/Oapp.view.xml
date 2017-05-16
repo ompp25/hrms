@@ -23,6 +23,16 @@
 					<mvc:XMLView viewName="com.create.empEmp_creation.view.admin.JobCategory" />
 				</content>
 			</Page>
+			<Page id="jobtitle" title="Job Titles" class="sapMPage" showNavButton="false" navButtonText="Back" navButtonPress="onPressDetailBack" enableScrolling="true">
+				<content>
+					<mvc:XMLView viewName="com.create.empEmp_creation.view.admin.JobTitles" />
+				</content>
+			</Page>
+			<Page id="employmentstatus" title="Employment Status" class="sapMPage" showNavButton="false" navButtonText="Back" navButtonPress="onPressDetailBack" enableScrolling="true">
+				<content>
+					<mvc:XMLView viewName="com.create.empEmp_creation.view.admin.EmploymentStatus" />
+				</content>
+			</Page>
 			<Page id="detail3" title="Detail3Page" class="sapUiStdPage" showNavButton="false" navButtonText="Back" navButtonPress="onPressDetailBack">
 				<content>
 					<Table id="idProductsTable" inset="false" items="{ path: '/LineItems', sorter: { path: 'Name' } }" mode="MultiSelect" width="auto"

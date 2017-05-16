@@ -19,7 +19,7 @@
 			{
 				"text": "Job Title",
 				"ref": "sap-icon://business-card",
-				"custom": "detail2"
+				"custom": "jobtitle"
 			},
 			{
 				"text": "Pay Grades",
